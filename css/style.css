@@ -1,0 +1,67 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #4ec25e;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.board h1 {
+  text-align: center;
+}
+
+.board .create-column {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.board .column-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.board .column-container .column {
+  background-color: green;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.board .column-container .column .column-title {
+  padding: 5px;
+  text-align: center;
+  color: #131111;
+  background-color: #FFF;
+  border-radius: 8px;
+  height: auto;
+}
+
+.board .column-container .column .column-card-list {
+  margin-right: 30px;
+  list-style-type: none;
+  text-align: center;
+  min-height: 220px;
+  padding-bottom: 70px;
+}
+
+.board .column-container .column .column-card-list .card {
+  text-align: center;
+  margin-bottom: 10px;
+  min-height: 100px;
+  color: brown;
+}
+
+.board .column-container .column .column-card-list .card-description {
+  background-color: #ecfd05;
+  padding: 5px;
+  border: solid 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
