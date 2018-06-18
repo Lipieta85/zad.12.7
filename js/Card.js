@@ -6,26 +6,9 @@ function Card(id, name) {
   this.name = name || 'No name given';
   this.element = generateTemplate('card-template', { description: this.name }, 'li');
 
-  this.element.querySelector('.card').addEventListener('click', function (event) {
+  this.element.querySelector('.btn-delete').addEventListener('click', function (event) {
     event.stopPropagation();
-    /* var self = this;
-    var Name = prompt("Enter the name of the card");
-
-    fetch(baseUrl + '/card/' + self.id, {
-      method: 'PUT',
-      headers: myHeaders,
-      body: Name,
-    })
-      .then(function (resp) {
-        return resp.json();
-      })
-    .then(function (resp) {
-      var name = new name(resp.id, cardName);
-    })
-    */
-    if (event.target.classList.contains('btn-delete')) {
-      self.removeCard();
-    }
+    self.removeCard();
   });
 }
 Card.prototype = {
