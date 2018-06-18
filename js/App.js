@@ -21,10 +21,11 @@ function setupColumns(columns) {
 	});
 }
 
-function setupCards(col, cards) {
+function setupCards(col, cards,) {
 	cards.forEach(function (card) {
-		var cardObj = new Card(card.id, card.name);
+		var cardObj = new Card(card.id, card.name, col.id);
 		col.addCard(cardObj);
+
 	});
 }
 
